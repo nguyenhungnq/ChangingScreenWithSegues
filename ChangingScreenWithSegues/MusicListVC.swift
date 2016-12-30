@@ -28,7 +28,10 @@ class MusicListVC: UIViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination is PlaySongVC {
+        if let destination = segue.destination as? PlaySongVC {
+            if let song = sender  as? String {
+                destination.selectedSong = song
+            }
             
         }
     }
