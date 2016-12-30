@@ -1,5 +1,5 @@
 //
-//  MusicListVC.swift
+//  PlaySongVC.swift
 //  ChangingScreenWithSegues
 //
 //  Created by NguyenHung on 12/30/16.
@@ -8,18 +8,19 @@
 
 import UIKit
 
-class MusicListVC: UIViewController {
+class PlaySongVC: UIViewController {
+    @IBOutlet weak var songTitleLbl: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.blue
+        // Do any additional setup after loading the view.
     }
 
-    @IBAction func backBtnPressed(_ sender: AnyObject) {
-        dismiss(animated: true, completion: nil)
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-    
     
 
     /*
