@@ -93,6 +93,9 @@
                                     <constraint firstAttribute="width" constant="147" id="l25-Pg-4RI"/>
                                 </constraints>
                                 <state key="normal" title="Load 3rd Screen"/>
+                                <connections>
+                                    <action selector="load3rdScreenPressed:" destination="eu7-jU-cEi" eventType="touchUpInside" id="6zu-E9-fZ9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -104,7 +107,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="wLX-Yo-1YB" kind="showDetail" id="T4P-ML-e22"/>
+                        <segue destination="wLX-Yo-1YB" kind="showDetail" identifier="SongVC" id="T4P-ML-e22"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3w2-X9-x5p" userLabel="First Responder" sceneMemberID="firstResponder"/>

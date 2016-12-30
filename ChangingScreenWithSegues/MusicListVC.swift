@@ -20,16 +20,17 @@ class MusicListVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func load3rdScreenPressed(_ sender: AnyObject) {
+        let songTitle = "Quit Playing Games With My Heart"
+        performSegue(withIdentifier: "PlaySongVC", sender: songTitle)
+    }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.destination is PlaySongVC {
+            
+        }
     }
-    */
 
 }
