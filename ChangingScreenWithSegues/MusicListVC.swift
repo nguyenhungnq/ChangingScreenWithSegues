@@ -19,11 +19,13 @@ class MusicListVC: UIViewController {
 
     @IBAction func backBtnPressed(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
+        // An back de quay lai man hinh 1
     }
     
     @IBAction func load3rdScreenPressed(_ sender: AnyObject) {
         let songTitle = "Quit Playing Games With My Heart"
         performSegue(withIdentifier: "PlaySongVC", sender: songTitle)
+        //an vao load 3rdsCREEN de hien man hinh 3 va in dong chu Quit Playing...
     }
     
 
