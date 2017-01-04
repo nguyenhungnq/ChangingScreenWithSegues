@@ -14,6 +14,7 @@ class MusicListVC: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.blue
+        //Thay mau background
     }
 
     @IBAction func backBtnPressed(_ sender: AnyObject) {
