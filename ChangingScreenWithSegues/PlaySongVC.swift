@@ -20,6 +20,8 @@ class PlaySongVC: UIViewController {
             _selectedSong = newValue
         }
     }
+    //selectedSong = "Hung"
+    //var name = selectedSong
 
     override func viewDidLoad() {
         super.viewDidLoad()
